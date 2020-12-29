@@ -1,3 +1,12 @@
+# Replace "00000" with your zip code on line 16
+# Adjust chime settings to taste; test with dualsense
+# Run with command:
+# python check_stock.py ps5
+# python check_stock.py ps5-digital
+# python check_stock.py xbox-series-x
+# python check_stock.py xbox-series-s
+# python check_stock.py dualsense
+
 import datetime
 import requests
 import sys
@@ -10,7 +19,7 @@ TCINs = {
     "ps5-digital": 81114596,
     "xbox-series-x": 80790841,
     "xbox-series-s": 80790842,
-    "dualsense": 81114477
+    "dualsense": 81114477 # Use to test the chime / zip, it's almost always in stock
 }
 
 FREQUENCY = 500

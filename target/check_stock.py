@@ -14,6 +14,7 @@ import time
 import winsound
 
 YOUR_ZIP_CODE = 00000
+CHECK_FREQUENCY_IN_SECONDS = 5
 TCINs = {
     "ps5": 81114595,
     "ps5-digital": 81114596,
@@ -40,7 +41,7 @@ def checkAvailability(tcin):
         if 'IN_STOCK' in data:
             doChime()
             break
-        time.sleep(0.5)
+        time.sleep(CHECK_FREQUENCY_IN_SECONDS)
     
 def isInStock(store):
     if store['order_pickup']['availability_status'] != "OUT_OF_STOCK":

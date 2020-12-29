@@ -13,14 +13,14 @@ import sys
 import time
 import winsound
 
-YOUR_ZIP_CODE = 00000
+YOUR_ZIP_CODE = "00000" # keep the quotes around this number
 CHECK_FREQUENCY_IN_SECONDS = 5
 TCINs = {
     "ps5": 81114595,
     "ps5-digital": 81114596,
     "xbox-series-x": 80790841,
     "xbox-series-s": 80790842,
-    "dualsense": 81114477 # Use to test the chime / zip, it's almost always in stock
+    "dualsense": 81114477 # Use to test the chime / zip, it's almost always in stock. If it doesn't work, check your zip code
 }
 
 FREQUENCY = 500
